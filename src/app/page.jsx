@@ -7,7 +7,8 @@ import ParticlesBackground from "../../components/ParticlesBackground";
 import SocialMedia from "../../components/SocialMedia";
 import StatisticsSection from "../../components/StatisticsSection";
 import AboutMe from "../../components/AboutMe";
-import Skills from "../../components/Skills";
+import Services from "../../components/Services";
+
 import Skill from "../../components/Skill";
 
 const LandingPage = () => {
@@ -20,12 +21,12 @@ const LandingPage = () => {
     "Contact",
   ];
   const skills = [
-    { name: "React", percentage: 90 },
-    { name: "JavaScript", percentage: 85 },
-    { name: "TypeScript", percentage: 80 },
-    { name: "Node.js", percentage: 75 },
+    { name: "React", percentage: 80 },
+    { name: "JavaScript", percentage: 80 },
+    { name: "Next.js", percentage: 80 },
+    { name: "CSS", percentage: 80 },
+    { name: "Node.js", percentage: 70 },
     { name: "Python", percentage: 70 },
-    { name: "CSS", percentage: 85 },
   ];
 
   return (
@@ -109,7 +110,7 @@ const LandingPage = () => {
       <AboutMe />
 
       <div className="w-full max-w-7xl mx-auto p-6">
-        <h2 className="text-3xl font-patrick mt-8 text-center mb-8">
+        <h2 className="text-3xl font-patrick mt-8 text-center mb-8 text-green">
           My Skills
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -122,6 +123,7 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
+      <Services />
     </ParticlesBackground>
   );
 };
