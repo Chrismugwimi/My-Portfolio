@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -31,11 +30,11 @@ const LandingPage = () => {
 
   return (
     <ParticlesBackground>
-      <div className="flex justify-center items-center mx-auto">
+      <div className="flex items-center justify-between mx-auto pt-16">
         <div className="min-h-screen w-full">
           {/* Navigation */}
           <nav className="fixed top-0 w-full backdrop-blur-sm z-50">
-            <div className="max-w-8xl mx-auto px-4 sm:px-4 lg:px-8">
+            <div className="max-w-8xl mx-auto px-4">
               <div className="flex justify-between h-16 items-center">
                 <div className="text-2xl font-patrick font-bold text-green pl-0">
                   Mugwimi.
@@ -74,7 +73,7 @@ const LandingPage = () => {
                   </h2>
 
                   {/* Buttons */}
-                  <div className="flex space-x-4 pt-2">
+                  <div className="flex space-x-4 pt-2 justify-center">
                     <button className="bg-green text-black px-6 py-3 rounded hover:border-2 border-green hover:bg-black hover:text-white transition-colors font-patrick font-bold">
                       Talk to me
                     </button>
@@ -113,7 +112,7 @@ const LandingPage = () => {
         <h2 className="text-3xl font-patrick mt-8 text-center mb-8 text-green">
           My Skills
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill) => (
             <Skill
               key={skill.name}

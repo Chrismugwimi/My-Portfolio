@@ -59,8 +59,8 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 bg-gray-100" id="services-section">
-      <div className="container mx-auto px-4">
+    <div className="py-16 bg-gray-100">
+      <div className="mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-lg text-blue-500 font-semibold">
             I am great at
@@ -74,7 +74,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service) => (
             <div
               key={service.id}
@@ -90,6 +90,6 @@ export default function Services() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

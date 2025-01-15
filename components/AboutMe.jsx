@@ -12,26 +12,14 @@ const AboutMe = () => {
 
   return (
     <div className="py-16">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex-row gap-8 items-center">
-          {/* Image Section */}
-          <div className="w-full relative">
-            <div className="relative">
-              <div className="absolute inset-0 z-10"></div>
-              <Image
-                src="/Chris.jpeg"
-                alt="Profile"
-                className="object-cover"
-                width={550}
-                height={550}
-              />
-            </div>
-          </div>
-
           {/* Content Section */}
-          <div className="w-full flex flex-col justify-center">
+          <div className="flex flex-col justify-center px-4">
             <div>
-              <h2 className="text-3xl font-patrick text-green">About Me</h2>
+              <h2 className="text-3xl font-patrick text-green mt-8 text-center">
+                About Me
+              </h2>
               <br />
               <div className="text-white mb-8 font-patrick">
                 <p>
@@ -48,8 +36,21 @@ const AboutMe = () => {
                   troubleshooting and networking.
                 </p>
               </div>
+              {/* Image Section */}
+              <div className="w-full relative">
+                <div className="relative">
+                  <div className="absolute inset-0 z-10"></div>
+                  <Image
+                    src="/Chris.jpeg"
+                    alt="Profile"
+                    className="object-cover"
+                    width={550}
+                    height={550}
+                  />
+                </div>
+              </div>
 
-              <div className="space-y-4 mb-8">
+              <div className="space-y-4 mb-8 mt-8">
                 {[
                   ["Location:", "Nyeri, Kenya"],
                   ["Email:", " chrismugwimi01@gmail.com"],
@@ -65,14 +66,14 @@ const AboutMe = () => {
               </div>
 
               {/* Interests Section */}
-              <div className="">
-                <h3 className="text-3xl font-patrick text-green mb-6">
+              <div className="mx-auto">
+                <h3 className="text-3xl font-patrick text-green text-center">
                   My Interests
                 </h3>
                 <br />
                 <div className="flex flex-wrap gap-8">
                   {interests.map((interest, index) => (
-                    <div key={index} className="flex items-center gap-6">
+                    <div key={index} className="flex items-center gap-4">
                       <div className="w-12 h-12 rounded-full flex items-center justify-center text-green">
                         {interest.icon}
                       </div>
