@@ -8,9 +8,9 @@ const Skill = ({ name, percentage }) => {
       <h3 className="text-xl font-patrick font-bold mb-4 text-center">
         {name}
       </h3>
-      <div className="flex flex-col items-center">
-        <div className="flex items-center justify-center w-32 h-32 mb-4">
-          <div style={{ width: "60%", height: "60%" }}>
+      <div className="grid grid-cols-2 items-center gap-4">
+        <div className="flex items-center justify-center w-32 h-32 mb-4 mx-auto mt-8">
+          <div style={{ width: "50%", height: "50%" }}>
             <CircularProgressbar
               value={percentage}
               text={`${percentage}%`}
