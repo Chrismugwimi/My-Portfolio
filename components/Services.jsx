@@ -1,95 +1,112 @@
+import React from "react";
+import {
+  Palette,
+  Globe,
+  Code,
+  Image,
+  Briefcase,
+  PenTool,
+  Layers,
+  Search,
+} from "lucide-react";
+
 export default function Services() {
   const services = [
     {
       id: 1,
       title: "Web Design",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-3d-design", // Replace with an actual icon
+        "Creating beautiful, intuitive interfaces that engage users and elevate your brand.",
+      Icon: Palette,
     },
     {
       id: 2,
       title: "Web Application",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-app-development",
+        "Building powerful, scalable web applications that solve real business problems.",
+      Icon: Globe,
     },
     {
       id: 3,
       title: "Web Development",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-web-programming",
+        "Developing robust, responsive websites using modern technologies and best practices.",
+      Icon: Code,
     },
     {
       id: 4,
       title: "Banner Design",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-branding",
+        "Crafting eye-catching banners that capture attention and drive engagement.",
+      Icon: Image,
     },
     {
       id: 5,
       title: "Branding",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-computer",
+        "Developing cohesive brand identities that resonate with your target audience.",
+      Icon: Briefcase,
     },
     {
       id: 6,
       title: "Icon Design",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-vector",
+        "Creating unique, meaningful icons that enhance user experience and visual appeal.",
+      Icon: PenTool,
     },
     {
       id: 7,
       title: "Graphic Design",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-vector",
+        "Delivering stunning visuals that communicate your message effectively.",
+      Icon: Layers,
     },
     {
       id: 8,
       title: "SEO",
       description:
-        "A small river named Duden flows by their place and supplies.",
-      icon: "flaticon-zoom",
+        "Optimizing your digital presence to improve visibility and attract more visitors.",
+      Icon: Search,
     },
   ];
 
   return (
-    <div className="py-16 bg-gray-100">
-      <div className="mx-auto px-4">
-        <div className="text-center mb-12">
-          <span className="text-lg text-blue-500 font-semibold">
-            I am great at
-          </span>
-          <h2 className="text-3xl font-bold mt-2">
-            We do awesome services for our clients
+    <section className="">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-green text-3xl font-patrick mt-8">
+            Professional Services
           </h2>
-          <p className="text-gray-600 mt-4">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia.
+          <p className="text-gray-600 mt-4 mb-8 text-lg max-w-2xl mx-auto">
+            We deliver exceptional solutions tailored to your needs, combining
+            creativity with technical expertise to help your business thrive.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-lg shadow-md p-6 text-center hover:scale-105 transition-transform duration-300"
+              className="bg-gray-200 rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow duration-300 group"
             >
-              <div className="flex justify-center items-center text-blue-500 mb-4 text-4xl">
-                <i className={service.icon}></i>{" "}
-                {/* Replace with actual icons */}
+              <div className="flex justify-center items-center mb-6">
+                <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
+                  <service.Icon
+                    className="w-8 h-8 text-green"
+                    strokeWidth={1.5}
+                  />
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-blue-600">
+                {service.title}
+              </h3>
+              <p className="text-black leading-relaxed">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
