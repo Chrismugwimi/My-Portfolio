@@ -4,10 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import ParticlesBackground from "../../components/ParticlesBackground";
 import SocialMedia from "../../components/SocialMedia";
-import StatisticsSection from "../../components/StatisticsSection";
 import AboutMe from "../../components/AboutMe";
 import Services from "../../components/Services";
-
 import Skill from "../../components/Skill";
 
 const LandingPage = () => {

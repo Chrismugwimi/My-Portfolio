@@ -23,10 +23,8 @@ const AboutMe = () => {
               <br />
               <div className="text-white mb-8 font-patrick">
                 <p>
-                  Experienced in blending the art of design with the skill of
-                  programming to deliver immersive and engaging user
-                  experiences. I have strong proficiency in JavaScript and a
-                  thorough understanding of React.js and its core principles.
+                  I am good in Frontend Development, having interracted with
+                  React.js and Next.js.
                 </p>{" "}
                 <br />
                 <p>
