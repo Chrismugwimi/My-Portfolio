@@ -38,8 +38,8 @@ module.exports = {
       },
       colors: {
         green: "#00FF00",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        // background: "var(--background)",
+        // foreground: "var(--foreground)",
       },
       backgroundImage: {
         "star-pattern": "radial-gradient(white 1px, transparent 1px)",

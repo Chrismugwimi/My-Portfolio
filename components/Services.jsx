@@ -71,42 +71,38 @@ export default function Services() {
   ];
 
   return (
-    <section className="">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-green text-3xl font-patrick mt-8">
-            Professional Services
-          </h2>
-          <p className="text-gray-600 mt-4 mb-8 text-lg max-w-2xl mx-auto">
-            We deliver exceptional solutions tailored to your needs, combining
-            creativity with technical expertise to help your business thrive.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="bg-green rounded-xl shadow-sm p-6 hover:bg-green-200 shadow-md transition-shadow duration-300 group"
-            >
-              <div className="flex justify-center items-center mb-6">
-                <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
-                  <service.Icon
-                    className="w-8 h-8 text-blue-600"
-                    strokeWidth={1.5}
-                  />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-blue-600">
-                {service.title}
-              </h3>
-              <p className="text-black leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
+    <div className="max-w-6xl mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-green text-3xl font-patrick mt-8">
+          Professional Services
+        </h2>
+        <p className="text-gray-600 mt-4 mb-8 text-lg max-w-2xl mx-auto">
+          We deliver exceptional solutions tailored to your needs, combining
+          creativity with technical expertise to help your business thrive.
+        </p>
       </div>
-    </section>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className="bg-blue-400 rounded-xl shadow-sm p-6 hover:bg-green-200 shadow-md transition-shadow duration-300 group"
+          >
+            <div className="flex justify-center items-center mb-6">
+              <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
+                <service.Icon
+                  className="w-8 h-8 text-blue-600"
+                  strokeWidth={1.5}
+                />
+              </div>
+            </div>
+            <h3 className="text-xl font-semibold mb-3 text-blue-600">
+              {service.title}
+            </h3>
+            <p className="text-black leading-relaxed">{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
