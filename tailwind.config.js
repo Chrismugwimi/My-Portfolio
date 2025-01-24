@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -38,6 +39,14 @@ module.exports = {
       },
       colors: {
         green: "#00FF00",
+        gray: "#9CA3AF",
+        red: "#DC2626",
+        black: colors.black,
+        white: colors.white,
+
+        indigo: colors.indigo,
+        red: colors.rose,
+        yellow: colors.amber,
         // background: "var(--background)",
         // foreground: "var(--foreground)",
       },

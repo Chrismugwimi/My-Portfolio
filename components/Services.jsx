@@ -86,7 +86,7 @@ export default function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-blue-400 rounded-xl shadow-sm p-6 hover:bg-green-200 shadow-md transition-shadow duration-300 group"
+            className="bg-green rounded-xl shadow-sm p-6 hover:bg-green-200 shadow-md transition-shadow duration-300 group"
           >
             <div className="flex justify-center items-center mb-6">
               <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
