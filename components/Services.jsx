@@ -86,7 +86,7 @@ export default function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-green rounded-xl shadow-sm p-6 hover:bg-green-200 shadow-md transition-shadow duration-300 group"
+            className="bg-green rounded-xl shadow-sm p-6 hover:bg-blue-600 transition-colors duration-300"
           >
             {/*Service Icon Center*/}
             {/* <div className="flex justify-center items-center mb-6">
@@ -94,7 +94,8 @@ export default function Services() {
                 <service.Icon className="w-8 h-8 text-gray" strokeWidth={1.5} />
               </div>
             </div> */}
-            <h3 className="text-xl font-semibold mb-3 text-blue-600">
+
+            <h3 className="text-xl font-semibold mb-3 text-blue-600 hover:text-white transition-colors duration-300">
               <service.Icon className="w-8 h-8 text-gray" strokeWidth={1.5} />
               {service.title}
             </h3>
