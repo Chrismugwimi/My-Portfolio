@@ -77,7 +77,7 @@ export default function Services() {
           Professional Services
         </h2>
         <p className="text-gray-600 mt-4 mb-8 text-lg max-w-2xl mx-auto">
-          We deliver exceptional solutions tailored to your needs, combining
+          I deliver exceptional solutions tailored to your needs, combining
           creativity with technical expertise to help your business thrive.
         </p>
       </div>
@@ -88,15 +88,14 @@ export default function Services() {
             key={service.id}
             className="bg-green rounded-xl shadow-sm p-6 hover:bg-green-200 shadow-md transition-shadow duration-300 group"
           >
-            <div className="flex justify-center items-center mb-6">
+            {/*Service Icon Center*/}
+            {/* <div className="flex justify-center items-center mb-6">
               <div className="p-3 rounded-lg bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
-                <service.Icon
-                  className="w-8 h-8 text-blue-600"
-                  strokeWidth={1.5}
-                />
+                <service.Icon className="w-8 h-8 text-gray" strokeWidth={1.5} />
               </div>
-            </div>
+            </div> */}
             <h3 className="text-xl font-semibold mb-3 text-blue-600">
+              <service.Icon className="w-8 h-8 text-gray" strokeWidth={1.5} />
               {service.title}
             </h3>
             <p className="text-black leading-relaxed">{service.description}</p>
